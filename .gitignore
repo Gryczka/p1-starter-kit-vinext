@@ -42,3 +42,11 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+/.p1-output/
+/.p1-build.lock
+/.wrangler/
+/.vinext/
+/dist/
+.dev.vars
+.dev.vars.*

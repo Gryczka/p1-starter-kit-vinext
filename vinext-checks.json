@@ -1,0 +1,18 @@
+[
+  { "path": "/", "text": "P1 fixture home" },
+  {
+    "path": "/guides/workers",
+    "text": "Rendered from the P1 block library",
+    "click": {
+      "selector": ".p1-accordion__item:nth-child(2) button",
+      "text": "The P1 accordion hydrated"
+    }
+  },
+  { "path": "/missing-p1-page", "status": 404 },
+  { "path": "/old-guide?ref=smoke", "status": 308, "location": "/guides/workers?ref=smoke" },
+  { "path": "/p1", "text": "Authenticating...", "browserText": "Welcome to P1 Visual Editor" },
+  { "path": "/p1/guides/workers", "text": "Authenticating...", "browserText": "Welcome to P1 Visual Editor" },
+  { "path": "/p1/api/page-data?path=/guides/workers", "contentType": "application/json", "includes": "P1 fixture nested page" },
+  { "path": "/p1/api/publish", "method": "POST", "json": {}, "status": 401, "contentType": "application/json", "includes": "unauthorized" },
+  { "path": "/p1/auth/redeem", "method": "POST", "json": {}, "status": 400, "contentType": "application/json", "includes": "Missing transactionId" }
+]
