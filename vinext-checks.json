@@ -1,4 +1,9 @@
 [
+  {
+    "path": "/release-notes",
+    "text": "Release notes for the P1 starter",
+    "browserText": "Editorial teams can now preview nested guide pages before publication."
+  },
   { "path": "/", "text": "P1 fixture home" },
   {
     "path": "/guides/workers",
